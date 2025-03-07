@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int square;
+	cin>>square;
+	int low=1,high=square,mid;
+	int i,ash;
+	for(i=1;i<=square;i++)
+	{
+		mid=(low+high)/2;
+		ash=mid*mid;
+		if(ash>square)
+		{
+			high=mid-1;
+		}
+		else if(ash<square)
+		{
+			low=mid +1;
+		}
+		else if(ash==square)
+	{
+		cout<<mid;
+		break;
+	}
+		
+	}
+}
